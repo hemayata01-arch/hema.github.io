@@ -1,14 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>اولین سایت من</title>
+<meta charset="UTF-8">
+<title>Booking Verification</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f4f7;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 420px;
+        margin: auto;
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        background: linear-gradient(135deg, #0d2a52, #163d73);
+        color: #fff;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .header h2 {
+        margin: 0 0 10px;
+    }
+
+    .serial {
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+    .status {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 6px 16px;
+        background: #1f9d55;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .row {
+        margin-bottom: 16px;
+    }
+
+    .label {
+        color: #777;
+        font-size: 13px;
+    }
+
+    .value {
+        font-weight: bold;
+        margin-top: 4px;
+    }
+
+    .notice {
+        background: #eef6ff;
+        border-left: 4px solid #1d4ed8;
+        padding: 12px;
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background: #0d2a52;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #777;
+        padding: 15px;
+    }
+</style>
 </head>
 <body>
 
-  <h1>سلام! 👋</h1>
-  <p>این اولین وبسایت من است.</p>
+<div class="card">
+    <div class="header">
+        <h2>Booking Verification</h2>
+        <div class="serial">Serial: CMUNI11251210065</div>
+        <div class="status">VALID</div>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="label">Applicant</div>
+            <div class="value">Hemayatullah Ahmadi</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Service</div>
+            <div class="value">Passport Extension – تمدید پاسپورت</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Date & Time</div>
+            <div class="value">08 Jun 2026 at 09:00 AM</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Contact</div>
+            <div class="value">+49 172 8787071</div>
+        </div>
+
+        <div class="notice">
+            <strong>This booking is valid.</strong><br>
+            Allow entry with all listed participants.
+        </div>
+
+        <button class="btn">Print Verification</button>
+    </div>
+
+    <div class="footer">
+        Verified on 17 Dec 2025 at 04:21 AM<br>
+        Consulate General of Afghanistan – Munich
+    </div>
+</div>
 
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
+
